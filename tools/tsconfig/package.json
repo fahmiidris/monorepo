@@ -1,0 +1,11 @@
+{
+    "name": "@monorepo/tsconfig",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "exports": {
+        "./basic.json": "./src/basic.json",
+        "./react.json": "./src/react.json",
+        "./start.json": "./src/start.json"
+    }
+}

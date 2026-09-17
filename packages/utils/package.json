@@ -1,0 +1,17 @@
+{
+    "name": "@monorepo/utils",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "exports": {
+        "./functions/*": "./src/functions/*.ts"
+    },
+    "dependencies": {
+        "cnfast": "0.2.0",
+        "date-fns": "4.4.0"
+    },
+    "devDependencies": {
+        "@monorepo/tsconfig": "workspace:*",
+        "typescript": "6.0.3"
+    }
+}

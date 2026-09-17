@@ -1,0 +1,27 @@
+{
+    "name": "monorepo",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "apps/*",
+            "packages/*",
+            "tools/*"
+        ]
+    },
+    "scripts": {
+        "dev": "turbo run dev",
+        "lint": "oxlint",
+        "lint:fix": "oxlint --fix",
+        "format": "oxfmt --check",
+        "format:fix": "oxfmt",
+        "quality": "bun run lint && bun run format",
+        "quality:fix": "bun run lint:fix && bun run format:fix"
+    },
+    "devDependencies": {
+        "oxfmt": "0.67.0",
+        "oxlint": "1.82.0",
+        "turbo": "2.10.12"
+    },
+    "packageManager": "bun@1.4.0"
+}

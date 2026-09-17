@@ -1,0 +1,11 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "ignorePatterns": ["**/routeTree.gen.ts"],
+    "categories": {
+        "correctness": "warn"
+    },
+    "rules": {
+        "eslint/no-unused-vars": "warn",
+        "eslint/eqeqeq": "warn"
+    }
+}
