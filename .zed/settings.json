@@ -163,6 +163,19 @@
                     }
                 }
             ]
+        },
+        "TOML": {
+            "format_on_save": "on",
+            "prettier": {
+                "allowed": false
+            },
+            "formatter": [
+                {
+                    "language_server": {
+                        "name": "oxfmt"
+                    }
+                }
+            ]
         }
     }
 }
