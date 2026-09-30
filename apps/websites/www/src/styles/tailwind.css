@@ -1,0 +1,6 @@
+@import "@monorepo/ui/tailwind.css";
+@import "@fontsource-variable/google-sans";
+
+@theme inline {
+    --font-sans: "Google Sans Variable", sans-serif;
+}

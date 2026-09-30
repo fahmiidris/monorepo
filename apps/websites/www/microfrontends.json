@@ -1,0 +1,16 @@
+{
+    "$schema": "https://turborepo.dev/microfrontends/schema.json",
+    "options": {
+        "localProxyPort": 3024
+    },
+    "applications": {
+        "www": {
+            "packageName": "@monorepo/www",
+            "development": {
+                "local": {
+                    "port": 4321
+                }
+            }
+        }
+    }
+}

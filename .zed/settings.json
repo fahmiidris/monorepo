@@ -17,6 +17,7 @@
                 "classAttributes": ["class", "className", "classNames"],
                 "experimental": {
                     "configFile": {
+                        "apps/websites/www/src/styles/tailwind.css": "apps/websites/www/**",
                         "packages/ui/src/styles/tailwind.css": "packages/ui/**"
                     }
                 }

@@ -7,7 +7,7 @@
         "./functions/*": "./src/functions/*.ts"
     },
     "dependencies": {
-        "cnfast": "0.2.0",
+        "cn": "0.4.0",
         "date-fns": "4.4.0"
     },
     "devDependencies": {

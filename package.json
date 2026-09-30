@@ -5,12 +5,15 @@
     "workspaces": {
         "packages": [
             "apps/*",
+            "apps/websites/*",
+            "examples/*",
             "packages/*",
             "tools/*"
         ]
     },
     "scripts": {
         "dev": "turbo run dev",
+        "dev:www": "turbo run dev --filter=@monorepo/www",
         "lint": "oxlint",
         "lint:fix": "oxlint --fix",
         "format": "oxfmt --check",

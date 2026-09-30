@@ -1,4 +1,4 @@
-import { cn } from "cnfast";
+import { cn } from "cn";
 
 type ClassName = string | string[] | undefined | null;
 

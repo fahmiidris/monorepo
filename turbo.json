@@ -4,6 +4,10 @@
         "dev": {
             "persistent": true,
             "cache": false
+        },
+        "dev:www": {
+            "persistent": true,
+            "cache": false
         }
     }
 }
