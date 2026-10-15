@@ -6,15 +6,21 @@
     "ignorePatterns": ["**/routeTree.gen.ts"],
     "sortTailwindcss": {
         "stylesheet": "./packages/ui/src/styles/tailwind.css",
-        "functions": ["cn", "cv"],
-        "preserveWhitespace": true
+        "functions": ["cn", "cv"]
     },
     "sortImports": {
+        "internalPattern": ["@menetas/", "@/"],
+        "customGroups": [
+            { "groupName": "namespace", "selector": "external", "modifiers": ["wildcard"] },
+            { "groupName": "local", "elementNamePattern": ["@/**"] }
+        ],
         "groups": [
             "type-import",
             ["value-builtin", "value-external"],
+            "namespace",
             "type-internal",
             "value-internal",
+            "local",
             ["type-parent", "type-sibling", "type-index"],
             ["value-parent", "value-sibling", "value-index"],
             "unknown"

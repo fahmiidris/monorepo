@@ -1,32 +1,22 @@
-# dependencies
 node_modules
-
-# production
 build
 dist
 out
+bin
+target
 
-# next.js
-.next
 next-env.d.ts
 
-# misc
-.DS_Store
 *.pem
+*.tsbuildinfo
 
-# env files (can opt-in for committing if needed)
+.DS_Store
+
 .env
 .env*.local
 
-# typescript
-*.tsbuildinfo
-
-# turborepo
+.next
 .turbo
-
-# fumadocs
 .source
-
-# tanstack
 .tanstack
 .output

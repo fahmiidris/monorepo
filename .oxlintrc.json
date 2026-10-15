@@ -1,11 +1,33 @@
 {
     "$schema": "./node_modules/oxlint/configuration_schema.json",
-    "ignorePatterns": ["**/routeTree.gen.ts"],
+    "ignorePatterns": ["**/*.gen.ts"],
+    "plugins": ["import"],
     "categories": {
-        "correctness": "warn"
+        "correctness": "warn",
+        "suspicious": "warn",
+        "perf": "warn"
     },
     "rules": {
+        "no-console": "warn",
+        "no-nested-ternary": "warn",
+
         "eslint/no-unused-vars": "warn",
-        "eslint/eqeqeq": "warn"
-    }
+        "eslint/eqeqeq": "warn",
+        "eslint/no-shadow": "warn",
+
+        "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
+        "import/no-duplicates": "warn",
+        "import/no-self-import": "warn",
+        "import/no-cycle": "warn",
+        "import/no-default-export": "warn",
+        "import/no-unassigned-import": "warn"
+    },
+    "overrides": [
+        {
+            "files": ["**/*.config.ts", "**/*.vite.ts"],
+            "rules": {
+                "import/no-default-export": "off"
+            }
+        }
+    ]
 }

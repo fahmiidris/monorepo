@@ -9,30 +9,31 @@
         "preview": "bun run --bun vite preview"
     },
     "dependencies": {
-        "@fontsource-variable/google-sans": "5.3.1",
+        "@fontsource-variable/google-sans": "5.3.2",
         "@monorepo/ui": "workspace:*",
         "@monorepo/utils": "workspace:*",
-        "@tanstack/react-devtools": "0.10.12",
-        "@tanstack/react-query": "5.103.1",
-        "@tanstack/react-query-devtools": "5.103.1",
-        "@tanstack/react-router": "1.170.38",
+        "@tanstack/react-devtools": "0.10.13",
+        "@tanstack/react-query": "5.104.2",
+        "@tanstack/react-query-devtools": "5.104.2",
+        "@tanstack/react-router": "1.170.44",
         "@tanstack/react-router-devtools": "1.167.2",
-        "@tanstack/react-start": "1.168.56",
+        "@tanstack/react-start": "1.169.2",
         "@tanstack/zod-adapter": "1.167.0",
         "nitro": "3.0.260903-beta",
-        "react": "19.3.0",
-        "react-dom": "19.3.0",
-        "zod": "4.6.5"
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "zod": "4.6.7"
     },
     "devDependencies": {
         "@monorepo/tsconfig": "workspace:*",
         "@tanstack/devtools-vite": "0.8.5",
         "@tanstack/react-router-ssr-query": "1.167.3",
-        "@types/node": "26.6.2",
+        "@types/bun": "catalog:",
+        "@types/node": "catalog:",
         "@types/react": "19.3.0",
         "@types/react-dom": "19.3.0",
-        "@vitejs/plugin-react": "6.1.1",
+        "@vitejs/plugin-react": "6.1.2",
         "typescript": "6.0.3",
-        "vite": "8.3.0"
+        "vite": "8.3.4"
     }
 }

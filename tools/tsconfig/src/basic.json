@@ -4,7 +4,7 @@
     "compilerOptions": {
         "target": "ESNext",
         "lib": ["ESNext"],
-        "module": "esnext",
+        "module": "preserve",
         "moduleResolution": "bundler",
         "moduleDetection": "force",
         "allowImportingTsExtensions": true,
@@ -15,6 +15,7 @@
         "strictNullChecks": true,
         "noUncheckedIndexedAccess": true,
         "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": false,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
@@ -25,6 +26,7 @@
         "forceConsistentCasingInFileNames": true,
         "declaration": true,
         "declarationMap": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "allowJs": true
     }
 }

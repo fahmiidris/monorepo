@@ -9,7 +9,11 @@
             "examples/*",
             "packages/*",
             "tools/*"
-        ]
+        ],
+        "catalog": {
+            "@types/bun": "1.4.3",
+            "@types/node": "26.6.5"
+        }
     },
     "scripts": {
         "dev": "turbo run dev",
@@ -22,9 +26,9 @@
         "quality:fix": "bun run lint:fix && bun run format:fix"
     },
     "devDependencies": {
-        "oxfmt": "0.67.0",
-        "oxlint": "1.82.0",
-        "turbo": "2.10.12"
+        "oxfmt": "0.73.0",
+        "oxlint": "1.88.0",
+        "turbo": "2.11.8"
     },
     "packageManager": "bun@1.4.0"
 }
